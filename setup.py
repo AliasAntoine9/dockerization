@@ -5,7 +5,7 @@ with open("requirements.txt", "r") as file:
 
 
 setup(
-    name="First containerized API",
+    name="dockerization",
     version="1.0.0",
     author="alias",
     author_email="alias@fake_mail.com",
