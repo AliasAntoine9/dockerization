@@ -1,12 +1,14 @@
 from setuptools import setup, find_packages
 
+from api import __version__, __app_name__
+
 with open("requirements.txt", "r") as file:
     requirements = file.read().splitlines()
 
 
 setup(
-    name="dockerization",
-    version="1.0.0",
+    name=__app_name__,
+    version=__version__,
     author="alias",
     author_email="alias@fake_mail.com",
     description="Fake API",

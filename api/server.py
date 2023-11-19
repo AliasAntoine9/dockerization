@@ -1,14 +1,13 @@
 from fastapi import FastAPI
-from api import api_router
+from api import api_router, __version__
 
 
 def create_api() -> FastAPI:
 
     api = FastAPI(
         title="Docker API",
-        version="0.1.0",
+        version=__version__,
         description="This API has to finish in a Docker container",
-        root_path="api/v1",
         docs_url=None,
         redoc_url=None,
     )
